@@ -31,12 +31,12 @@ This project allows users to create **Blueprints** (contract templates) and gene
 ## 🗂 Folder Structure
 src/
 ├─ components/ # Reusable UI components
-├─ pages/ # Blueprint and Contract pages
-├─ types/ # TypeScript type definitions
-├─ state/ # State management files
-├─ utils/ # Utility functions
-├─ App.tsx # Main App component
-└─ main.tsx # Entry point
+├─ pages/ 
+├─ types/ 
+├─ state/ 
+├─ utils/ 
+├─ App.tsx 
+└─ main.tsx 
 
 ---
 
