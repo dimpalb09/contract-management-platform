@@ -41,12 +41,12 @@ Each contract follows a lifecycle:
 ---
 
 ## Tech Stack
-
-* **Frontend:** HTML, CSS, JavaScript  
-* **State Management:** Vanilla JS / Local state  
-* **Data Storage:** Local storage / Mocked persistence  
-
----
+ 
+●  React 
+●  TypeScript 
+●  Component-based architecture 
+●  Proper state management 
+●  Clean folder structure 
 
 ## Project Structure
 
