@@ -67,7 +67,7 @@ cd contract-management-platform
 npm install
 npm run dev
 ```
-📁 Available Scripts
+##📁 Available Scripts
 
 npm run dev → Start the dev server
 
@@ -75,7 +75,7 @@ npm run build → Build the project for production
 
 npm run preview → Preview the production build
 
-📌 Next Steps / Improvements
+##📌 Next Steps / Improvements
 
 Add persistent storage (e.g., localStorage or backend API)
 
