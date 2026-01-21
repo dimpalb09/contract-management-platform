@@ -1,89 +1,134 @@
+
 # Contract Management Platform
 
-A frontend-based **Contract Management Platform** built with **React**, **TypeScript**, and **Vite**.  
-This project allows users to create **Blueprints** (contract templates) and generate contracts from them. It demonstrates **component-based architecture**, **state management**, and **clean UI design**.
+A frontend-based **Contract Management Platform** built from scratch to demonstrate product thinking, UI design, state management, and clean code architecture. The project allows users to create reusable contract templates (blueprints), generate contracts, and manage their lifecycle.
 
 ---
 
-## 🚀 Features
+## Features
 
-- **Blueprint Creation**
-  - Create reusable contract templates with configurable fields
-  - Supported field types: Text, Date, Signature, Checkbox
-  - Field metadata stored: type, label, position
+### 1. Blueprint Creation
 
-- **Contract Creation from Blueprint**
-  - Generate contracts from existing blueprints
-  - Fill in values for all fields
+* Create a blueprint as a reusable contract template.
+* Configurable field types:
+  * Text
+  * Date
+  * Signature
+  * Checkbox
+* Basic positioning of fields on a page.
+* Stores metadata for each field:
+  * Type
+  * Label
+  * Position
+* Data persistence (local or mocked).
 
-- **Contract Lifecycle**
-  - Contracts follow a lifecycle:
-    ```
-    Created → Approved → Sent → Signed → Locked
-    ```
+### 2. Contract Creation from Blueprint
 
-- **Frontend Only**
-  - Fully implemented using React + TypeScript
-  - Local state used for storing blueprints and contracts (mocked persistence)
+* Select an existing blueprint.
+* Generate a contract that inherits all blueprint fields.
+* Fill values for each field.
+
+### 3. Contract Lifecycle
+
+Each contract follows a lifecycle:  
+`Created → Approved → Sent → Signed → Locked`
+
+### 4. User Interaction
+
+* Fill and edit contract fields.
+* Track contract status and updates.
 
 ---
 
-## 🗂 Folder Structure
+## Tech Stack
+
+* **Frontend:** HTML, CSS, JavaScript  
+* **State Management:** Vanilla JS / Local state  
+* **Data Storage:** Local storage / Mocked persistence  
+
+---
+
+## Project Structure
+
+```
+
 src/
-├─ components/ # Reusable UI components
-├─ pages/ 
-├─ types/ 
-├─ state/ 
-├─ utils/ 
-├─ App.tsx 
-└─ main.tsx 
+├── assets/                # Images, icons, fonts
+├── components/            # Reusable UI components
+│   ├── BlueprintCard.tsx
+│   ├── ContractCard.tsx
+│   ├── FieldInput.tsx
+│   └── StatusFilter.tsx
+├── pages/                 # Application pages
+│   ├── Blueprints.tsx
+│   ├── Contracts.tsx
+│   └── ContractDetail.tsx
+├── state/                 # Global state management
+│   └── store.ts
+├── types/                 # TypeScript types
+│   └── index.ts
+├── utils/                 # Helper functions
+│   └── lifecycle.ts
+├── App.tsx                # Main app component
+├── index.css              # Global CSS
+└── main.tsx               # Entry point
+
+````
 
 ---
 
-## 🛠 Tech Stack
-
-- **Frontend:** React, TypeScript  
-- **Bundler:** Vite  
-- **Styling:** CSS (or SCSS if implemented)  
-- **Version Control:** Git & GitHub  
-
----
-
-## 💻 Getting Started
-
-### Prerequisites
-
-- Node.js v18+  
-- npm v8+  
-
----
-
-### Installation
+## How to Run
 
 1. Clone the repository:
+
 ```bash
-git clone https://github.com/dimpalb09/contract-management-platform.git
-cd contract-management-platform
-npm install
-npm run dev
+git clone https://github.com/yourusername/ContractManagementPlatform.git
+````
+
+2. Navigate to the project directory:
+
+```bash
+cd ContractManagementPlatform
 ```
-## 📁 Available Scripts
 
-npm run dev → Start the dev server
+3. Install dependencies:
 
-npm run build → Build the project for production
+```bash
+npm install
+```
 
-npm run preview → Preview the production build
+4. Start the development server:
 
-## 📌 Next Steps / Improvements
+```bash
+npm start
+```
 
-Add persistent storage (e.g., localStorage or backend API)
+Open [http://localhost:3000](http://localhost:3000) to view in the browser.
 
-Add authentication for users and admins
+---
 
-Implement drag-and-drop field positioning for blueprints
+## Goals & Learning Outcomes
 
-Add UI for managing contract lifecycle (Approve, Send, Sign, Lock)
+* Learn **frontend architecture** from scratch.
+* Implement **state management** for dynamic forms.
+* Understand **contract lifecycle management** in a web application.
+* Practice **clean code practices** and **modular component design**.
 
+---
 
+## Roadmap / Future Enhancements
 
+* Add **backend integration** (Node.js/Express + Database) to store contracts persistently.
+* Add **authentication** for multiple users.
+* Implement **real-time contract collaboration**.
+* Include **export/print contracts** as PDF.
+
+---
+
+## Author
+
+**Dimple Bhangale**
+CSE (Cloud Computing) | Backend & Cloud Development
+Learning DevOps & Cloud Architecture
+
+```
